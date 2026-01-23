@@ -26,6 +26,9 @@ body {
   font-family: 'Product Sans', sans-serif;
 }
 
+
+
+
 .heading {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 700;

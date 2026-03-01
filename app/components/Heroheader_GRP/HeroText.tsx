@@ -1,26 +1,23 @@
-// app/components/HeroHeading.tsx
 import React from 'react';
 
-interface HeroHeadingProps {
+interface HeroTextProps {
   children: React.ReactNode;
-  className?: string;
-  dataWId?: string;
 }
 
-export default function HeroHeading({ children, className = '', dataWId }: HeroHeadingProps) {
+export default function HeroText({ children }: HeroTextProps) {
   return (
-    <div className="mask">
-      <h1
-        data-w-id={dataWId}
+    <div className="mask overflow-hidden mt-2 sm:mt-4">
+      <div
+        data-w-id="8185329b-a277-0f16-fc52-2b2dc10976ec"
         style={{
           transform: 'translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
           transformStyle: 'preserve-3d',
           fontFamily: "'Product Sans', sans-serif"
         }}
-        className={`heading ${className}`}
+        className="text-block text-sm sm:text-base md:text-lg lg:text-xl break-words w-full"
       >
         {children}
-      </h1>
+      </div>
     </div>
   );
 }

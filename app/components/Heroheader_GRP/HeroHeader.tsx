@@ -1,4 +1,3 @@
-// app/components/HeroHeader.tsx
 import React from 'react';
 import BackgroundVideo from './BackgroundVideo';
 import HeroHeading from './HeroHeading';
@@ -14,35 +13,23 @@ export default function HeroHeader() {
 
   return (
     <BackgroundVideo posterUrl={posterUrl} videoUrls={videoUrls}>
-      <header 
-        id="home" 
-        className="hero-overlay"
-        style={{ 
-          position: 'relative', 
-          zIndex: 1,
-          minHeight: '70vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
+      <header
+        id="home"
+        className="flex items-center justify-center min-h-[40vh] sm:min-h-[50vh] md:min-h-[60vh] px-4 sm:px-6 md:px-10 py-10"
       >
-        <div
-          data-w-id="8185329b-a277-0f16-fc52-2b2dc10976db"
-          className="centered-container w-container"
-          style={{
-            textAlign: 'center',
-            padding: '0 20px'
-          }}
-        >
-          <HeroHeading dataWId="8185329b-a277-0f16-fc52-2b2dc10976dc">
-            <strong className="bold-text-3">Google Developer Group</strong>
+        <div className="text-center max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto w-full">
+          <HeroHeading
+            dataWId="8185329b-a277-0f16-fc52-2b2dc10976dc"
+            className="text-4xl sm:text-3xl md:text-4xl lg:text-6xl leading-tight"
+          >
+            <strong className="bold-text-4">Google Developer Group</strong>
           </HeroHeading>
 
-          <HeroHeading 
-            className="mask"
+          <HeroHeading
+            className="text-4xl sm:text-3xl md:text-4xl lg:text-6xl leading-tight"
             dataWId="5c594c49-320a-fda1-35b9-229681bdbc25"
           >
-            <strong className="bold-text-5">Arizona State University</strong>
+            <strong className="bold-text-4">Arizona State University</strong>
           </HeroHeading>
 
           <HeroText>

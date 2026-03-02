@@ -1,7 +1,7 @@
 'use client';
 
-import NavbarLogo from './NavbarLogo';
-import NavItemLink from './NavItemLink';
+import NavbarLogo from './navbar_logo';
+import NavItemLink from './nav_itemlink';
 
 type NavItem = {
   href: string;

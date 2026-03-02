@@ -2,8 +2,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import DesktopNavbar from './DesktopNavbar';
-import MobileNavbar from './MobileNavbar';
+import DesktopNavbar from './desktop_navbar';
+import MobileNavbar from './mobile_navbar';
 
 type NavItem = {
   href: string;
@@ -107,7 +107,7 @@ export default function Navbar() {
       data-easing="ease"
       data-easing2="ease"
       role="banner"
-      className="navbar w-nav w-full border-2 relative z-50 h-[79px] bg-white"
+      className="navbar w-nav w-full border-2 border-transparent md:border-gray-200 fixed top-0 left-0 right-0 z-50 h-[79px] bg-white"
     >
       {/* Positioning container */}
       <div ref={frameRef} className="relative w-full h-full">

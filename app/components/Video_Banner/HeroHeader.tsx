@@ -12,6 +12,7 @@ export default function HeroHeader() {
   const posterUrl = 'https://cdn.prod.website-files.com/61ef5947f465385ddf91bef0/61f0b1cb94ace368d470b71d_GDSC_hero_bg-poster-00001.jpg';
 
   return (
+    <div className="pt-[79px]">
     <BackgroundVideo posterUrl={posterUrl} videoUrls={videoUrls}>
       <header
         id="home"
@@ -38,5 +39,6 @@ export default function HeroHeader() {
         </div>
       </header>
     </BackgroundVideo>
+    </div>
   );
 }

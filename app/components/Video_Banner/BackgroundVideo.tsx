@@ -14,8 +14,7 @@ export default function BackgroundVideo({ posterUrl, videoUrls, children }: Back
       data-autoplay="true"
       data-loop="true"
       data-wf-ignore="true"
-      className="relative w-full overflow-hidden"
-      style={{ borderRadius: 'clamp(400px, 5vw, 400px)' }}
+      className="relative w-full overflow-hidden [border-radius:clamp(40px,5vw,400px)] sm:rounded-none md:[border-radius:clamp(400px,5vw,400px)]"
     >
       <video
         autoPlay

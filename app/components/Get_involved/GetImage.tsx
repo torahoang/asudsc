@@ -17,7 +17,7 @@ export default function GetInvolvedImage({
             width={1200}
             height={900}
             priority
-            className="h-full w-full object-contain p-4"
+            className="h-full w-full object-contain"
           />
         </div>
       </div>

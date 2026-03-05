@@ -79,7 +79,7 @@ export default function GetInvolvedSection({
 
   return (
     <section className="w-full bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <GetInvolvedText
             heading={heading}

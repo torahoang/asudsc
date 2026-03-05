@@ -33,7 +33,7 @@ export default function DesktopNavbar({
       ].join(' ')}
       style={{ columnGap: `${gapPx}px` }}
     >
-      <NavbarLogo />
+      <NavbarLogo className="-ml-10" />
 
       <nav role="navigation" className="flex items-center gap-3 min-w-0">
         {items.map((item) => (

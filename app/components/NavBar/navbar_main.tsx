@@ -2,8 +2,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import DesktopNavbar from './desktop_navbar';
-import MobileNavbar from './mobile_navbar';
+import DesktopNavbar from './Navbar_parts/desktop_navbar';
+import MobileNavbar from './Navbar_parts/mobile_navbar';
 
 type NavItem = {
   href: string;

@@ -1,4 +1,4 @@
-import ImageComponent from "../imageHolder";
+import ImageComponent from "../../imageHolder";
 
 export default function GetInvolvedImage({
   illustrationSrc,

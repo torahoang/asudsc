@@ -1,6 +1,6 @@
-import GetInvolvedImage from "./GetImage";
-import GetInvolvedText from "./GetText";
-import type { SocialLink } from "./SocialLinks";
+import GetInvolvedImage from "./Involved_parts/GetImage";
+import GetInvolvedText from "./Involved_parts/GetText";
+import type { SocialLink } from "./Involved_parts/SocialLinks";
 
 interface GetInvolvedSectionProps {
   heading?: string;

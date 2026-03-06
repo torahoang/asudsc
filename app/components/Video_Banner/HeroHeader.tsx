@@ -1,7 +1,7 @@
 import React from 'react';
-import BackgroundVideo from './BackgroundVideo';
-import HeroHeading from './HeroHeading';
-import HeroText from './HeroText';
+import BackgroundVideo from './Banner_parts/BackgroundVideo';
+import HeroHeading from './Banner_parts/HeroHeading';
+import HeroText from './Banner_parts/HeroText';
 
 export default function HeroHeader() {
   const videoUrls = {

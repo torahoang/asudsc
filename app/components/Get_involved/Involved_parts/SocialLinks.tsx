@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ImageComponent from "../imageHolder";
+import ImageComponent from "../../imageHolder";
 
 export type SocialLink = {
   label: string;

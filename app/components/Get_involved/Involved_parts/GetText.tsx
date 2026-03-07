@@ -18,7 +18,7 @@ export default function GetInvolvedText({
 }) {
   return (
     <div className="order-2 space-y-6 lg:order-1">
-      <h2 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+      <h2 className="text-4xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
         {heading}
       </h2>
 

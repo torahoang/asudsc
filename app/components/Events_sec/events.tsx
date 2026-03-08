@@ -25,32 +25,32 @@ const EventItems: CoverFlowItem[] = [
   { id: 16, image: "/images/Events/wireside-chat-3.png", title: "Feb 6th, 2025" },
   { id: 17, image: "/images/Events/introduction-to-backend.png", title: "Jan 30th, 2025" },
   // fall 2024
-  { id: 18, image: "/images/Events/amazon-data-scientist-speaker.png", title: "Nov 7th, 2024" },
-  { id: 19, image: "/images/Events/web-dev-frontend-basics.png", title: "Oct 31st, 2024" },
-  { id: 20, image: "/images/Events/wireside-chat-2.png", title: "Oct 24th, 2024" },
-  { id: 21, image: "/images/Events/google-cloud-hero.png", title: "Oct 16th, 2024" },
-  { id: 22, image: "/images/Events/wireside-chat-1.png", title: "Oct 3rd, 2024" },
-  { id: 23, image: "/images/Events/introduction-to-figma.png", title: "Sep 26th, 2024" },
-  { id: 24, image: "/images/Events/waymo-info-session.png", title: "Sep 3rd, 2024" },
-  //spring 2024
-  { id: 25, image: "/images/Events/intro-nextjs-vercel.png", title: "Apr 5th, 2024" },
-  { id: 26, image: "/images/Events/intro-to-apis.png", title: "Mar 22nd, 2024" },
-  { id: 27, image: "/images/Events/intro-to-containers.png", title: "Feb 26th, 2024" },
-  { id: 28, image: "/images/Events/firebase-x-gemini.png", title: "Feb 19th, 2024" },
-  //fall 2023
-  { id: 29, image: "/images/Events/paypal-meet-greet.png", title: "Oct 18th, 2023" },
-  { id: 30, image: "/images/Events/intro-to-android.png", title: "Sep 29th, 2023" },
-  { id: 31, image: "/images/Events/intro-to-machine-learning.png", title: "Nov 3rd, 2023" },
-  { id: 32, image: "/images/Events/intro-to-flutter.png", title: "Nov 17th, 2023" },
-  //spring 2023
-  { id: 33, image: "/images/Events/dsa-resume-review.png", title: "Mar 24th, 2023" },
-  // fall 2022
-  { id: 34, image: "/images/Events/intro-to-ios.png", title: "Nov 17th, 2022" },
-  //spring 2022
-  { id: 35, image: "/images/Events/intro-to-git.png", title: "Apr 1st, 2022" },
-  { id: 36, image: "/images/Events/linux-and-python.png", title: "Mar 18th, 2022" },
-  { id: 37, image: "/images/Events/react-web-development.png", title: "Feb 25th, 2022" },
-  { id: 38, image: "/images/Events/intro-to-nodejs.png", title: "Feb 18th, 2022" },
+  // { id: 18, image: "/images/Events/amazon-data-scientist-speaker.png", title: "Nov 7th, 2024" },
+  // { id: 19, image: "/images/Events/web-dev-frontend-basics.png", title: "Oct 31st, 2024" },
+  // { id: 20, image: "/images/Events/wireside-chat-2.png", title: "Oct 24th, 2024" },
+  // { id: 21, image: "/images/Events/google-cloud-hero.png", title: "Oct 16th, 2024" },
+  // { id: 22, image: "/images/Events/wireside-chat-1.png", title: "Oct 3rd, 2024" },
+  // { id: 23, image: "/images/Events/introduction-to-figma.png", title: "Sep 26th, 2024" },
+  // { id: 24, image: "/images/Events/waymo-info-session.png", title: "Sep 3rd, 2024" },
+  // //spring 2024
+  // { id: 25, image: "/images/Events/intro-nextjs-vercel.png", title: "Apr 5th, 2024" },
+  // { id: 26, image: "/images/Events/intro-to-apis.png", title: "Mar 22nd, 2024" },
+  // { id: 27, image: "/images/Events/intro-to-containers.png", title: "Feb 26th, 2024" },
+  // { id: 28, image: "/images/Events/firebase-x-gemini.png", title: "Feb 19th, 2024" },
+  // //fall 2023
+  // { id: 29, image: "/images/Events/paypal-meet-greet.png", title: "Oct 18th, 2023" },
+  // { id: 30, image: "/images/Events/intro-to-android.png", title: "Sep 29th, 2023" },
+  // { id: 31, image: "/images/Events/intro-to-machine-learning.png", title: "Nov 3rd, 2023" },
+  // { id: 32, image: "/images/Events/intro-to-flutter.png", title: "Nov 17th, 2023" },
+  // //spring 2023
+  // { id: 33, image: "/images/Events/dsa-resume-review.png", title: "Mar 24th, 2023" },
+  // // fall 2022
+  // { id: 34, image: "/images/Events/intro-to-ios.png", title: "Nov 17th, 2022" },
+  // //spring 2022
+  // { id: 35, image: "/images/Events/intro-to-git.png", title: "Apr 1st, 2022" },
+  // { id: 36, image: "/images/Events/linux-and-python.png", title: "Mar 18th, 2022" },
+  // { id: 37, image: "/images/Events/react-web-development.png", title: "Feb 25th, 2022" },
+  // { id: 38, image: "/images/Events/intro-to-nodejs.png", title: "Feb 18th, 2022" },
 ];
 
 export default function CoverFlowDemo() {

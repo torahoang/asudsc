@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   useCallback,
   useEffect,
@@ -15,7 +16,7 @@ import {
   type MotionValue,
 } from 'motion/react'
 import Image from 'next/image'
-
+import Link from 'next/link'
 export interface CoverFlowItem {
   id: string | number
   image: string
@@ -73,7 +74,8 @@ export function CoverFlow({
     damping: 30,
     mass: 1,
   })
-
+  const ctaOffset = 80 // increase this to move further right
+  const ctaX = centerGap + itemWidth / 2 + ctaOffset
   // Keep the MV as the source of truth for index changes (minimal rerenders).
   useEffect(() => {
     const clamp = (i: number) => Math.min(Math.max(i, 0), items.length - 1)
@@ -281,6 +283,71 @@ export function CoverFlow({
           />
         ))}
       </div>
+
+      {activeIndex === items.length - 1 && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25, ease: 'easeOut' }}
+          className="absolute left-1/2 z-50 pointer-events-auto"
+          // Desktop: your current “arrow to the right” placement
+          // Mobile: center it above the last card
+          style={{
+            // default (mobile): top edge of the active card + a little padding
+            top: `calc(50% - ${itemHeight / 2}px - 14px)`,
+            x: '-50%',
+          }}
+        >
+          {/* Mobile version */}
+          <motion.div className="md:hidden">
+            <Link
+              href="/events"
+              aria-label="See all events"
+              className="inline-flex items-center gap-2 rounded-full bg-background/80 backdrop-blur px-4 py-2 text-sm font-semibold text-foreground shadow-sm ring-1 ring-black/10 dark:ring-white/10 hover:bg-background/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              onPointerDown={(e) => e.stopPropagation()}
+              onPointerMove={(e) => e.stopPropagation()}
+              onPointerUp={(e) => e.stopPropagation()}
+              onTouchStart={(e) => e.stopPropagation()}
+              onTouchMove={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              <span>See all events</span>
+              <span aria-hidden="true">→</span>
+            </Link>
+          </motion.div>
+
+          {/* Desktop version (your current behavior) */}
+          <motion.div
+            className="hidden md:block bg-foreground/20 rounded-full"
+            initial={{ x: ctaX - 6 }}
+            animate={{ x: ctaX }}
+            exit={{ x: ctaX - 6 }}
+            transition={{ duration: 0.25, ease: 'easeOut' }}
+            style={{
+              // desktop keeps vertical centering like before
+              position: 'absolute',
+              top: `calc(50% + ${itemHeight / 2}px)`, // cancels parent top for desktop
+              transform: 'translateY(-50%)',
+            }}
+          >
+            <Link
+              href="/events"
+              aria-label="See all events"
+              className="inline-flex items-center gap-2 rounded-full bg-background/70 backdrop-blur px-4 py-2 text-sm font-semibold text-foreground shadow-sm ring-1 ring-black/10 dark:ring-white/10 hover:bg-background/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              onPointerDown={(e) => e.stopPropagation()}
+              onPointerMove={(e) => e.stopPropagation()}
+              onPointerUp={(e) => e.stopPropagation()}
+              onTouchStart={(e) => e.stopPropagation()}
+              onTouchMove={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              <span>See all events</span>
+              <span aria-hidden="true">→</span>
+            </Link>
+          </motion.div>
+        </motion.div>
+      )}
 
       <div className="absolute bottom-8 left-0 right-0 flex flex-col items-center justify-center pointer-events-none z-40 transition-opacity duration-300">
         <motion.div

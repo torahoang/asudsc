@@ -22,7 +22,7 @@ export const defaultCoreTeamMembers: TeamMember[] = [
   {
     name: 'Hoang Quy Nguyen',
     role: 'Vice President of Engineering',
-    imageSrc: '/images/team/hoang.jpg',
+    imageSrc: '/images/team/Hoang.jpg',
     imageAlt: 'Portrait of Hoang Quy Nguyen',
   },
   {

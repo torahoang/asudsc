@@ -44,7 +44,7 @@ const defaultParagraphs: string[] = [
     "We help you identify your passion in the broad field of Software Engineering, and help you learn those technologies to prepare you for the industry ahead.",
 ];
 export default function AboutClubSection({
-  heading = "About the Club",
+  heading = "About Us",
   paragraphs = defaultParagraphs,
   cards = defaultCards,
   className = "",

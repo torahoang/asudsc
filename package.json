@@ -9,12 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ashishgogula/coverflow": "^0.3.0",
     "@base-ui/react": "^1.1.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gsap": "^3.14.2",
+    "motion": "^12.35.1",
     "next": "^16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",

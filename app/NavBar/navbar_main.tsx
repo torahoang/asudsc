@@ -16,7 +16,7 @@ const NAV_ITEMS: NavItem[] = [
   { href: '/', label: 'Home', strong: true, current: true },
   { href: '/#about-section', label: 'About' },
   { href: '#core-team', label: 'Core Team' },
-  { href: '/events', label: 'Events' },
+  { href: '/Events_page', label: 'Events' },
   { href: '/alumni', label: 'Alumni' },
 ];
 

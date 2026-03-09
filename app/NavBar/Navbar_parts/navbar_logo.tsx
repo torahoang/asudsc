@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import ImageComponent from '@/app/components/imageHolder';
+import ImageComponent from '../../home_components/imageHolder';
 
 type NavbarLogoProps = {
   href?: string;
